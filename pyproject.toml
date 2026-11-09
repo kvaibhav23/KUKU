@@ -1,0 +1,18 @@
+[project]
+name = "saboot"
+version = "0.0.0"
+description = "AI lawyer for everyday disputes in India: helps people prove their rights."
+requires-python = ">=3.11,<3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["raw_outputs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
